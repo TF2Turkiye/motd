@@ -24,7 +24,7 @@ function sunucular_info()
 		"compatibility" => "*"
 	);
 }
-function cezalistesi_is_installed()
+function sunucular_is_installed()
 {
     global $db;
     if($db->table_exists("sunucular"))
@@ -33,7 +33,7 @@ function cezalistesi_is_installed()
     }
     return false;
 }
-function cezalistesi_install()
+function sunucular_install()
 {
     $templates = [
         'sunucular_bilgi' => '<div class="row vertical-align mb-1 pt-2 px-2 mx-0 text-muted fz-11">
